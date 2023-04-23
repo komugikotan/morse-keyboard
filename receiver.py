@@ -2,6 +2,9 @@ import serial
 import time
 import pyautogui
 
+#change -'s speed your own
+speed = 0.3
+space_speed = 0.7
 
 status = 2
 morse = ""
@@ -30,7 +33,7 @@ while(True):
                 blank_s = time.perf_counter()
                 blank_time = blank_s - blank
 
-                if blank_time > 0.3:
+                if blank_time > speed:
                     if (morse == ".-"):
                         morse_output = morse_output + "a"
                         pyautogui.write('a')
@@ -180,7 +183,7 @@ while(True):
                         pyautogui.write('*')
                         morse = ""
 
-                if blank_time > 0.8:
+                if blank_time > space_speed:
                     morse_output = morse_output + " "
                     pyautogui.write(' ')
                     morse = ""
@@ -192,9 +195,9 @@ while(True):
             if status == 1:
                 tontu_s = time.perf_counter()
                 pressed_time = tontu_s - tontu
-                if pressed_time > 0.3:
+                if pressed_time > speed:
                     morse = morse + "-"
-                if pressed_time < 0.3:
+                if pressed_time < speed:
                     morse = morse + "."
 
                 blank = time.perf_counter()
