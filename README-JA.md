@@ -1,7 +1,7 @@
 # Morse-keyboard
 ## 概要
 
-**ENGLISH VERSION IS [HERE](README-EN.md)!!!**
+**ENGLISH VERSION IS [HERE](README.md)!!!**
 
 Arduinoを使用し、電鍵をキーボード化するソフトウェアです。Arduinoに接続されたボタンまたは電鍵など（ONとOFFの切り替えができるスイッチであればなんでも可）を入力装置とし、モールス信号（CW）をキーボード入力に変換します。スピードなどは、コード内で切り替えることができます。
 
