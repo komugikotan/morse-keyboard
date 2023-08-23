@@ -1,4 +1,5 @@
 # Morse-keyboard
+Japanese Version（日本語版)は[こちら](README-JA.md)
 ## Overview
 
 The software converts Morse code (CW) to keyboard input by using buttons or keys (any switch that can be turned on and off) connected to the Arduino as the input device. Speeds, etc. can be switched within the code.
