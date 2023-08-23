@@ -39,4 +39,4 @@ If you want to change the length of the Morse long point, change the "speed" var
 
 ## Switch between Japanese and European (Roman Letters) Morse
 
-You can switch between Japanese and Latin modes by changing the settings. To switch, change the "type" variable on line 12 of "Receiver.py." If the value is set to 1, the mode is set to European mode; if the value is set to 2, the mode is set to Japanese mode.
+You can switch between Japanese and Latin modes by changing the settings. To switch, change the "type" variable on line 14 of "Receiver.py." If the value is set to 1, the mode is set to European mode; if the value is set to 2, the mode is set to Japanese mode. I want to add Korean mode if possible.
