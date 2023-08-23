@@ -174,8 +174,13 @@ while(True):
                         morse_output = morse_output + type_letter
 
                         if (type == 2):
-                            type_nihongo(type_letter) #Pyautogui isn't able to put Japanese letters so using function "type_nihongo." (nihongo means Japanese in Japanese)
-                            morse = ""
+                            if(morse_output == "sshjjknf"):
+                                type_nihongo("error")
+                                morse = ""
+                            else:
+                                type_nihongo(type_letter) #Pyautogui isn't able to put Japanese letters so using function "type_nihongo." (nihongo means Japanese in Japanese)
+                                morse = ""
+                            
                         else:
                             pyautogui.write(type_letter)
                             morse = ""
