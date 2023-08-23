@@ -31,7 +31,7 @@ Change "COM4" on line 15 in the program to match your environment. The numbers c
 
 Verification has been done only with Arduino Uno. Other Arduino has not been tested.
 
-Connect an electric key or tact switch, etc. to the two digital pins of the Arduino Uno. The pin number should be specified in the first line of telegraph.ino. The default is set to 2.
+Connect an electric key or tact switch(In the extreme, two wires can be used. You can turn it on and off by connecting and disconnecting the wires. I don't suggest it though), etc. to the two digital pins of the Arduino Uno. The pin number should be specified in the first line of telegraph.ino. The default is set to 2.
 
 ## Change Speed
 
