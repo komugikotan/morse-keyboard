@@ -1,10 +1,12 @@
+#import libraries
 import serial
 import time
 import pyautogui
 import pyperclip
 
-#change -'s speed your own
+#dash's speed
 speed = 0.3
+#spaces' speed
 space_speed = 0.7
 
 #Morse type (Japanese or Roman)
@@ -19,11 +21,12 @@ blank_s = ""
 tontu = ""
 tontu_s = ""
 
-
+#type Japanese by copy and pasting
 def type_nihongo(letters):
     pyperclip.copy(letters)
     pyautogui.hotkey('ctrl', 'v')
 
+#Dictionaly (morse_2_english)
 english_morse_dict = {
     ".-":"a",
     "-...":"b", 
@@ -72,6 +75,7 @@ english_morse_dict = {
     "-..-.":"/"
 }
 
+#dictionaly(morse_2_japanese)
 japanese_morse_dict = {
     ".----":"1",
     "..---":"2",
@@ -170,7 +174,7 @@ while(True):
                         morse_output = morse_output + type_letter
 
                         if (type == 2):
-                            type_nihongo(type_letter) #Pyautoguiは日本語が入力できないためコピー＆ペーストで対処
+                            type_nihongo(type_letter) #Pyautogui isn't able to put Japanese letters so using function "type_nihongo." (nihongo means Japanese in Japanese)
                             morse = ""
                         else:
                             pyautogui.write(type_letter)
